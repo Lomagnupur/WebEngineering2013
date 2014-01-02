@@ -1,8 +1,31 @@
-<form action="http://de.wikipedia.org/wiki/Spezial:Suche">
-   <fieldset>
-      <legend>Nach einem Artikel suchen</legend>
-      <input type="text"   name="search" value="" />
-      <input type="submit" name="go" value="Artikel"/>
-      <input type="submit" name="fulltext" value="Volltext" />
-   </fieldset>
-</form>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/bootstrap.css" rel="stylesheet" media="screen"/>
+		<title>Barrierefreies Formular</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Durchsuche die Wikipedia</h1>
+			<div>
+				<form action="http://de.wikipedia.org/wiki/Spezial:Suche">
+				   <fieldset>
+				      <legend>Nach einem Artikel suchen</legend>
+				      <label for="search">Suchbegriff</label>
+				      <input "type="text"   name="search" value="" />
+				      <input type="submit" name="go" value="Artikel"/>
+				      <input type="submit" name="fulltext" value="Volltext" />
+				   </fieldset>
+				</form>
+			</div>	
+			<a href="http://www.w3.org/WAI/WCAG2AAA-Conformance"
+			      title="Explanation of WCAG 2.0 Level Triple-A Conformance">
+			  <img height="32" width="88" 
+			          src="http://www.w3.org/WAI/wcag2AAA"
+			          alt="Level Triple-A conformance, 
+			          W3C WAI Web Content Accessibility Guidelines 2.0"></a>
+		</div>          
+	</body>
+</html>

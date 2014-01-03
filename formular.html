@@ -9,18 +9,25 @@
 	<body>
 		<div class="container">
 			<h1>Durchsuche die Wikipedia</h1>
+			<p>Dieses Formular ermöglicht die Suche in der Wikipedia. Geben Sie einen Suchbegriff in das Leerfeld ein. 
+					Mit dem Button "Artikel" wird ein passender Eintrag in der Wikipedia gesucht. Über den Button "Suche im Volltext" gelangt man zur
+					einer Auflistung aller Treffer in Artikeln der Wikipedia.</p>
 			<div>
-				<form action="http://de.wikipedia.org/wiki/Spezial:Suche">
-				   <fieldset>
-				      <legend>Nach einem Artikel suchen</legend>
-				      <label for="search">Suchbegriff</label>
-				      <input "type="text"   name="search" value="" />
-				      <input type="submit" name="go" value="Artikel"/>
-				      <input type="submit" name="fulltext" value="Volltext" />
-				   </fieldset>
+				<form action="http://de.wikipedia.org/wiki/Spezial:Suche" style="width:30%">
+					<fieldset>
+						<legend>Nach einem Artikel suchen</legend>
+						<div class="form-group">
+							<label for="search">Suchbegriff:</label>
+							<input type="text" class="form-control"   name="search" value="" />
+						</div>
+						<div class="form-group">
+							<input type="submit" class="btn btn-default" name="go" value="Suche nach Artikel" formtarget="_blank"/>
+							<input type="submit" class="btn btn-default" name="fulltext" value="Suche im Volltext" formtarget="_blank"/>
+						</div>
+					</fieldset>
 				</form>
 			</div>	
-			<a href="http://www.w3.org/WAI/WCAG2AAA-Conformance"
+			<a href="http://wave.webaim.org/report#/martinboehme.cloudcontrolled.com%2Fformular.html"
 			      title="Explanation of WCAG 2.0 Level Triple-A Conformance">
 			  <img height="32" width="88" 
 			          src="http://www.w3.org/WAI/wcag2AAA"
